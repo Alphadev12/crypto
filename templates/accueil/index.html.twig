@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+{% block title %}Accueil{% endblock %}
+{% block body %}
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            <!-- Single Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <div class="welcome-text">
+                                <h2 data-animation="bounceInDown" data-delay="900ms">Hello <br>I'm Jackson</h2>
+                                <p data-animation="bounceInDown" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
+                                <div class="hero-btn-group" data-animation="bounceInDown" data-delay="100ms">
+                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">En savoir plus</a>
+                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <div class="welcome-text">
+                                <h2 data-animation="bounceInUp" data-delay="100ms">Hello <br>I'm Alime</h2>
+                                <p data-animation="bounceInUp" data-delay="500ms">I photograph very instinctively. I see how it is taken like that. I do not follow certain styles, philosophies or teachers.</p>
+                                <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
+                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">En savoir plus</a>
+                                    <a class="hero-mail-contact" href="mailto:hello.alime@gmail.com">hello.alime@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+    <section>
+        <div class="container">
+            <h2 class="py-5">Les services proposées</h2>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="row">
+                    {% for i in 0..5%}
+
+                    <div class="col-12 col-sm-6 col-lg-6 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit.</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="our-team-area section-padding-80-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+                        <h2>à la une</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="member-thumb">
+                            <img src="/lib/img/bg-img/19.jpg" alt="">
+                        </div>
+                        <h5>BitGasy</h5>
+                        <span>Photographer</span>
+                        <div class="member-social-info">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-linkedin"></i></a>
+                            <a href="#"><i class="ti-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="member-thumb">
+                            <img src="/lib/img/bg-img/20.jpg" alt="">
+                        </div>
+                        <h5>Bitcoin</h5>
+                        <span>Photographer</span>
+                        <div class="member-social-info">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-linkedin"></i></a>
+                            <a href="#"><i class="ti-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member Area -->
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="member-thumb">
+                            <img src="/lib/img/bg-img/21.jpg" alt="">
+                        </div>
+                        <h5>Ethereum</h5>
+                        <span>Photographer</span>
+                        <div class="member-social-info">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-linkedin"></i></a>
+                            <a href="#"><i class="ti-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay="500ms">
+                        <div class="member-thumb">
+                            <img src="/lib/img/bg-img/21.jpg" alt="">
+                        </div>
+                        <h5>Cardano</h5>
+                        <span>Photographer</span>
+                        <div class="member-social-info">
+                            <a href="#"><i class="ti-facebook"></i></a>
+                            <a href="#"><i class="ti-twitter-alt"></i></a>
+                            <a href="#"><i class="ti-linkedin"></i></a>
+                            <a href="#"><i class="ti-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+{% endblock %}
