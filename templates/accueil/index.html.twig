@@ -1,20 +1,46 @@
 {% extends 'base.html.twig' %}
-
-{% block title %}Hello AccueilController!{% endblock %}
-
+{% block title %}Accueil{% endblock %}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel">
+            
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/2.jpg);">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <!-- Welcome Text -->
+                        <div class="col-12 col-lg-8 col-xl-6">
+                            <div class="welcome-text">
+                                <h2 data-animation="bounceInUp" data-delay="100ms">Hello <br>I'm Alime</h2>
+                                <p data-animation="bounceInUp" data-delay="500ms">Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Rem a ad eligendi numquam unde minus, non veritatis blanditiis eveniet voluptatibus esse. Mollitia nostrum dicta magnam labore ut amet sint consequuntur!</p>
+                                <div class="hero-btn-group" data-animation="bounceInUp" data-delay="900ms">
+                                    <a href="#" class="btn alime-btn mb-3 mb-sm-0 mr-4">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+    <section>
+        <div class="container">
+            <h2 class="py-5">Les services proposées</h2>
+        </div>
+        <div class="services">
+            <div class="container">
+                <div class="row">
+                    {% for i in 0..5%}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/1Dossier/webcup/crypto/src/Controller/AccueilController.php'|file_link(0) }}">src/Controller/AccueilController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/1Dossier/webcup/crypto/templates/accueil/index.html.twig'|file_link(0) }}">templates/accueil/index.html.twig</a></code></li>
-    </ul>
-</div>
+                    <div class="col-12 col-sm-6 col-lg-6 single_gallery_item nature mb-30 wow fadeInUp" data-wow-delay="100ms">
+                        <h3>Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit.</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+    </section>
 {% endblock %}
